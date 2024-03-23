@@ -9,6 +9,7 @@ Prabhat Kalle (pskalle2) and Shubham Mital (smital2)
   * Data Processing: Dedicated to cleaning, normalizing, and preparing the data for model training. This includes dealing with missing values, selecting relevant features, and splitting the data into training, validation, and testing sets
   * Machine Learning: Involves either leveraging existing Rust crates for machine learning or implementing models from scratch, followed by training these models with processed data and evaluating their performance.
   * API for Predictions: A Rust-built web server that allows users to input features of a house and receive price predictions, serving the trained model.
+  * *Checkpoint 1* -
 
 **Challenges**
   * The potential scarcity of comprehensive machine learning libraries in Rust, which might necessitate creating algorithms from scratch or interfacing with Python libraries for broader functionality.
