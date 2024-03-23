@@ -9,14 +9,15 @@ Prabhat Kalle (pskalle2) and Shubham Mital (smital2)
   * Data Processing: Dedicated to cleaning, normalizing, and preparing the data for model training. This includes dealing with missing values, selecting relevant features, and splitting the data into training, validation, and testing sets
   * Machine Learning: Involves either leveraging existing Rust crates for machine learning or implementing models from scratch, followed by training these models with processed data and evaluating their performance.
   * API for Predictions: A Rust-built web server that allows users to input features of a house and receive price predictions, serving the trained model.
-  * *Checkpoint 1* -
 
 **Checkpoints**
-  * Checkpoint 1: Completion of data collection and initial preprocessing. Setup of the Rust project structure
-  * Checkpoint 2: Implementation of the data processing module, focusing on data cleaning and feature selection
-  * Checkpoint 3: Development of the machine learning module with a basic model ready for training and evaluation
-  * Checkpoint 4: Optimization and final evaluation of the machine learning model(s). Beginning of the prediction API development
-  * Checkpoint 5: Finalization of the prediction API, along with comprehensive testing and documentation 
+  * *Checkpoint 1*:
+   * Completion of data collection and initial preprocessing. Setup of the Rust project structure
+   * Implementation of the data processing module, focusing on data cleaning and feature selection
+  * *Checkpoint 2*:
+   * Development of the machine learning module with a basic model ready for training and evaluation
+   * Optimization and final evaluation of the machine learning model(s). Beginning of the prediction API development
+   * Finalization of the prediction API, along with comprehensive testing and documentation 
 
 **Challenges**
   * The potential scarcity of comprehensive machine learning libraries in Rust, which might necessitate creating algorithms from scratch or interfacing with Python libraries for broader functionality.
