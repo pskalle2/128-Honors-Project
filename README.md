@@ -1,5 +1,5 @@
 # 128-Honors-Project
-#Prabhat Kalle (pskalle2) and Shubham Mital (smital2)
+Prabhat Kalle (pskalle2) and Shubham Mital (smital2)
 **Introduction**
   * This project focuses on developing a house price prediction model using Rust. We aim to implement and compare different machine learning algorithms to predict house prices based on various characteristics like location, size, and number of bedrooms. The motivation behind selecting this project is to explore the capabilities of Rust in the field of machine learning and data processing. Rust's performance and safety features make it an interesting choice for implementing efficient and reliable predictive models.
 **Technical Overview**
