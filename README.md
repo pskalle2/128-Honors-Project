@@ -11,9 +11,11 @@ Prabhat Kalle (pskalle2) and Shubham Mital (smital2)
   * API for Predictions: A Rust-built web server that allows users to input features of a house and receive price predictions, serving the trained model.
 
 **Checkpoints**
+ 
  *Checkpoint 1*:
    * Completion of data collection and initial preprocessing. Setup of the Rust project structure
    * Implementation of the data processing module, focusing on data cleaning and feature selection
+ 
  *Checkpoint 2*:
    * Development of the machine learning module with a basic model ready for training and evaluation
    * Optimization and final evaluation of the machine learning model(s). Beginning of the prediction API development
