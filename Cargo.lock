@@ -135,9 +135,11 @@ checksum = "81e127c19c76f5610bb32f6a5f5d1ce5a5374fedba554f05cf5599e3041cd634"
 name = "dummy_project"
 version = "0.1.0"
 dependencies = [
+ "csv",
  "linfa",
  "linfa-datasets",
  "linfa-trees",
+ "ndarray",
  "textplots",
 ]
 
