@@ -5,7 +5,6 @@ use linfa::Dataset;
 use linfa_trees::{DecisionTree, TreeNode};
 use linfa::prelude::*;
 use plotters::prelude::*;
-
 use std::io::Write;
 use std::process::Command;
 
@@ -21,8 +20,8 @@ fn main() {
   data_to_csv("./outputs/predictions.csv", &predictions);
   data_to_csv("./outputs/test_targets.csv", &test.targets);
 
-  helper("./outputs/test.csv", &dataset);
 
+  //creates a list of the feautures sorted by importance
   let binding: Vec<String> = dataset
         .feature_names();
   let sorted_feature_importances: Vec<(&str, f64)> = binding
@@ -47,7 +46,8 @@ fn main() {
             break;
         }
     }
-
+  
+  //plots all featurss with nonzero importances as a histogram
   plot_feature_importance(&sorted_feature_importances[..index].to_vec());
 
   //finds the accuracy of the decision tree model
@@ -56,9 +56,7 @@ fn main() {
   
   println!("Accuracy is: {}%", accuracy * 100.0);
 
-  //attempts to create a latex file that contains the steps taken by the decision tree; we have so much data that the latex file cannot be created properly for models with a higher split ratio
-  // File::create("./outputs/tree.tex").unwrap().write_all(model.export_to_tikz().with_legend().to_string().as_bytes()).unwrap();
-
+  //creates a .dot file that creates the decision tree
   let dot_filename: &str = "./outputs/tree.dot";
   let file: Result<File, std::io::Error> = File::create(dot_filename);
 
@@ -140,28 +138,6 @@ fn data_to_csv(filename: &str, data: &Array1<usize>) {
   }
 
   println!("{} created successfully.", filename);
-}
-
-fn helper(filename: &str, dataset: &Dataset<f32, usize, ndarray::Dim<[usize; 1]>>) {
-  let mut writer = Writer::from_path(filename).expect("Unable to create file");
-
-  // Write header
-  for feature_name in dataset.feature_names() {
-      writer.write_field(feature_name).expect("Unable to write to CSV");
-  }
-  writer.write_field("target").expect("Unable to write to CSV");
-  writer.write_record(None::<&[u8]>).expect("Unable to write to CSV");
-
-  // Write data
-  for (features, &target) in dataset.records().outer_iter().zip(dataset.targets().iter()) {
-      for feature_value in features.iter() {
-          writer.write_field(feature_value.to_string()).expect("Unable to write to CSV");
-      }
-      writer.write_field(target.to_string()).expect("Unable to write to CSV");
-      writer.write_record(None::<&[u8]>).expect("Unable to write to CSV");
-  }
-
-  println!("Dataset written to {} successfully.", filename);
 }
 
 fn plot_feature_importance(feature_importances: &Vec<(&str, f64)>) {

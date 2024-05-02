@@ -1,7 +1,7 @@
 digraph decision_tree {
     layout = sfdp;
     concentrate = true;
-    ratio = 0.75;
+    ratio = 0.5;
     13 [label="Feature FullBath <= 1.5"];
     13 -> 9 [label="true"];
     13 -> 24 [label="false"];
@@ -103,7 +103,7 @@ digraph decision_tree {
     9 [label="Feature 1stFlrSF <= 672.5"];
     9 -> 0 [label="true"];
     9 -> 0 [label="false"];
-    0 [label="91500"];
+    0 [label="75000"];
     0 [label="97000"];
     1 [label="Feature LotArea <= 1879.5"];
     1 -> 6 [label="true"];
@@ -560,11 +560,7 @@ digraph decision_tree {
     7 -> 0 [label="false"];
     0 [label="125000"];
     0 [label="109500"];
-    1 [label="Feature LotArea <= 7168.5"];
-    1 -> 0 [label="true"];
-    1 -> 0 [label="false"];
-    0 [label="109900"];
-    0 [label="109500"];
+    1 [label="109900"];
     0 [label="110000"];
     0 [label="93000"];
     1 [label="Feature LotArea <= 5879"];
@@ -1527,7 +1523,7 @@ digraph decision_tree {
     0 [label="139000"];
     0 [label="142000"];
     0 [label="139000"];
-    0 [label="139000"];
+    0 [label="136000"];
     0 [label="135000"];
     1 [label="Feature LotArea <= 9153"];
     1 -> 1 [label="true"];
@@ -1539,7 +1535,7 @@ digraph decision_tree {
     7 [label="Feature BsmtUnfSF <= 1194.5"];
     7 -> 0 [label="true"];
     7 -> 0 [label="false"];
-    0 [label="148000"];
+    0 [label="165000"];
     0 [label="149350"];
     1 [label="Feature LotArea <= 11262.5"];
     1 -> 1 [label="true"];
@@ -1589,7 +1585,7 @@ digraph decision_tree {
     1 [label="Feature LotArea <= 7135"];
     1 -> 0 [label="true"];
     1 -> 0 [label="false"];
-    0 [label="130000"];
+    0 [label="148000"];
     0 [label="143500"];
     0 [label="151000"];
     0 [label="159500"];
@@ -2256,7 +2252,7 @@ digraph decision_tree {
     1 [label="Feature LotArea <= 9826.5"];
     1 -> 0 [label="true"];
     1 -> 1 [label="false"];
-    0 [label="100000"];
+    0 [label="108000"];
     1 [label="Feature LotArea <= 9845.5"];
     1 -> 0 [label="true"];
     1 -> 1 [label="false"];
@@ -3125,7 +3121,11 @@ digraph decision_tree {
     4 [label="Feature YearBuilt <= 2004.5"];
     4 -> 1 [label="true"];
     4 -> 0 [label="false"];
-    1 [label="130000"];
+    1 [label="Feature LotArea <= 2533"];
+    1 -> 0 [label="true"];
+    1 -> 0 [label="false"];
+    0 [label="137500"];
+    0 [label="130000"];
     0 [label="159895"];
     1 [label="Feature LotArea <= 7131"];
     1 -> 0 [label="true"];
