@@ -1,7 +1,7 @@
 [package]
 name = "dummy_project"
 version = "0.1.0"
-authors = ["Prabhat Kalle <pskalle2@illinois.edu>", "Shubham Mital <svmital2@illinois.edu>"]
+authors = ["Prabhat Kalle <pskalle2@illinois.edu>", "Shubham Mital <smital2@illinois.edu>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -10,6 +10,8 @@ edition = "2018"
 textplots = "0.6"
 linfa = "0.6.0"
 linfa-trees = "0.6.0"
-linfa-datasets = { version = "0.6.0", features = ["iris"] }
+linfa-datasets = { version = "0.6.0"}
 csv = "1.1"
 ndarray = "0.15.6"
+plotters = "0.3.5"
+

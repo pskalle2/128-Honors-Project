@@ -1,0 +1,50 @@
+TARGET = Some("aarch64-apple-darwin")
+OPT_LEVEL = Some("0")
+TARGET = Some("aarch64-apple-darwin")
+HOST = Some("aarch64-apple-darwin")
+TARGET = Some("aarch64-apple-darwin")
+TARGET = Some("aarch64-apple-darwin")
+HOST = Some("aarch64-apple-darwin")
+CXX_aarch64-apple-darwin = None
+CXX_aarch64_apple_darwin = None
+HOST_CXX = None
+CXX = None
+HOST = Some("aarch64-apple-darwin")
+TARGET = Some("aarch64-apple-darwin")
+HOST = Some("aarch64-apple-darwin")
+CXXFLAGS_aarch64-apple-darwin = None
+CXXFLAGS_aarch64_apple_darwin = None
+HOST_CXXFLAGS = None
+CXXFLAGS = None
+DEBUG = Some("true")
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-Wall" "-Wextra" "-o" "/Users/prabhatkalle/Desktop/cs128/Honors and Rust/128-Honors-Project/target/debug/build/rustlearn-9c881575e5b52d16/out/dependencies/libsvm/svm.o" "-c" "dependencies/libsvm/svm.cpp"
+cargo:warning=dependencies/libsvm/svm.cpp:41:45: warning: unused parameter 's' [-Wunused-parameter]
+cargo:warning=static void print_string_stdout(const char *s)
+cargo:warning=                                            ^
+cargo:warning=dependencies/libsvm/svm.cpp:56:2: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+cargo:warning=        vsprintf(buf,fmt,ap);
+cargo:warning=        ^
+cargo:warning=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:199:1: note: 'vsprintf' has been explicitly marked deprecated here
+cargo:warning=__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+cargo:warning=^
+cargo:warning=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+cargo:warning=        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+cargo:warning=                                                      ^
+cargo:warning=2 warnings generated.
+exit status: 0
+TARGET = Some("aarch64-apple-darwin")
+TARGET = Some("aarch64-apple-darwin")
+HOST = Some("aarch64-apple-darwin")
+AR_aarch64-apple-darwin = None
+AR_aarch64_apple_darwin = None
+HOST_AR = None
+AR = None
+TARGET = Some("aarch64-apple-darwin")
+TARGET = Some("aarch64-apple-darwin")
+running: "ar" "crs" "/Users/prabhatkalle/Desktop/cs128/Honors and Rust/128-Honors-Project/target/debug/build/rustlearn-9c881575e5b52d16/out/libsvm.a" "/Users/prabhatkalle/Desktop/cs128/Honors and Rust/128-Honors-Project/target/debug/build/rustlearn-9c881575e5b52d16/out/dependencies/libsvm/svm.o"
+exit status: 0
+TARGET = Some("aarch64-apple-darwin")
+cargo:rustc-link-lib=static=svm
+cargo:rustc-link-search=native=/Users/prabhatkalle/Desktop/cs128/Honors and Rust/128-Honors-Project/target/debug/build/rustlearn-9c881575e5b52d16/out
+TARGET = Some("aarch64-apple-darwin")
+cargo:rustc-link-lib=c++
