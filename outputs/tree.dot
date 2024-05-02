@@ -1,7 +1,7 @@
 digraph decision_tree {
     layout = sfdp;
     concentrate = true;
-    ratio = 0.5;
+    ratio = 0.75;
     13 [label="Feature FullBath <= 1.5"];
     13 -> 9 [label="true"];
     13 -> 24 [label="false"];
@@ -1113,7 +1113,7 @@ digraph decision_tree {
     0 [label="140000"];
     0 [label="155900"];
     0 [label="131500"];
-    0 [label="144500"];
+    0 [label="149000"];
     6 [label="Feature BsmtFinSF1 <= 817.5"];
     6 -> 0 [label="true"];
     6 -> 0 [label="false"];
@@ -1539,7 +1539,7 @@ digraph decision_tree {
     7 [label="Feature BsmtUnfSF <= 1194.5"];
     7 -> 0 [label="true"];
     7 -> 0 [label="false"];
-    0 [label="165000"];
+    0 [label="148000"];
     0 [label="149350"];
     1 [label="Feature LotArea <= 11262.5"];
     1 -> 1 [label="true"];
@@ -1589,7 +1589,7 @@ digraph decision_tree {
     1 [label="Feature LotArea <= 7135"];
     1 -> 0 [label="true"];
     1 -> 0 [label="false"];
-    0 [label="148000"];
+    0 [label="130000"];
     0 [label="143500"];
     0 [label="151000"];
     0 [label="159500"];
@@ -2722,7 +2722,7 @@ digraph decision_tree {
     1 [label="Feature LotArea <= 3273"];
     1 -> 0 [label="true"];
     1 -> 0 [label="false"];
-    0 [label="176000"];
+    0 [label="172500"];
     0 [label="164500"];
     1 [label="Feature LotArea <= 7692.5"];
     1 -> 0 [label="true"];
@@ -4290,7 +4290,7 @@ digraph decision_tree {
     1 [label="Feature LotArea <= 14281.5"];
     1 -> 0 [label="true"];
     1 -> 0 [label="false"];
-    0 [label="250000"];
+    0 [label="187500"];
     0 [label="280000"];
     20 [label="Feature GarageArea <= 690.5"];
     20 -> 7 [label="true"];

@@ -55,7 +55,6 @@ fn main() {
   let accuracy = matrix.accuracy();
   
   println!("Accuracy is: {}%", accuracy * 100.0);
-  // plot_confusion_matrix(&matrix);
 
   //attempts to create a latex file that contains the steps taken by the decision tree; we have so much data that the latex file cannot be created properly for models with a higher split ratio
   // File::create("./outputs/tree.tex").unwrap().write_all(model.export_to_tikz().with_legend().to_string().as_bytes()).unwrap();
@@ -80,8 +79,6 @@ fn main() {
       std::process::exit(1);      
     }
   }
-  
-
 }
 
 fn get_dataset(path: &str) -> Dataset<f32, usize, ndarray::Dim<[usize; 1]>> {
