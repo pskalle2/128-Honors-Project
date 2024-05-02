@@ -1,7 +1,7 @@
 1. git clone
 2. install graphviz
 
-   a) For Windows:
+   a) **For Windows**:
 
       i. Download Graphviz: Visit the [Graphviz website](https://graphviz.org/download/) and download the installer for Windows.
 
@@ -11,13 +11,13 @@
           If not, you can manually add it later by going to Control Panel > System and Security > System > Advanced system settings > Environment Variables,
           then editing the PATH variable to include the Graphviz bin directory (e.g., C:\Program Files\Graphviz\bin).
 
-   b) For macOS:
+   b) **For macOS**:
 
       i. Using Homebrew: brew install graphviz
 
       ii. Using MacPorts: sudo port install graphviz
 
-   c) For Linux (Ubuntu/Debian):
+   c) **For Linux (Ubuntu/Debian)**:
 
       i. Using Apt: sudo apt-get update
                    sudo apt-get install graphviz
