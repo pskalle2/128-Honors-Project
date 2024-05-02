@@ -8,8 +8,9 @@
          ii. Run the Installer: Once downloaded, run the installer and follow the installation instructions.
 
          iii. Set Path (Optional): During installation, you may have the option to add Graphviz to your system's
-              PATH environment variable. If not, you can manually add it later by going to Control Panel > System and Security > System > Advanced system settings > Environment Variables,
-              then editing the PATH variable to include the Graphviz bin directory (e.g., C:\Program Files\Graphviz\bin).
+              PATH environment variable. If not, you can manually add it later by going to Control Panel >
+              System and Security > System > Advanced system settings > Environment Variables, then editing
+              the PATH variable to include the Graphviz bin directory (e.g., C:\Program Files\Graphviz\bin).
 
    b) **For macOS**:
 
