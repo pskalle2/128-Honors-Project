@@ -3,7 +3,8 @@
 
    a) **For Windows**:
 
-         i. Download Graphviz: Visit the [Graphviz website](https://graphviz.org/download/) and download the installer for Windows.
+         i. Download Graphviz: Visit the [Graphviz website](https://graphviz.org/download/) and download the installer for 
+            Windows.
 
          ii. Run the Installer: Once downloaded, run the installer and follow the installation instructions.
 
@@ -20,8 +21,10 @@
 
    c) **For Linux (Ubuntu/Debian)**:
 
-         i. Using Apt: sudo apt-get update
-                   sudo apt-get install graphviz
+         i. Using Apt: 
+         
+         sudo apt-get update
+         sudo apt-get install graphviz
 
          ii. Using Yum (CentOS/RHEL): sudo yum install graphviz
 
