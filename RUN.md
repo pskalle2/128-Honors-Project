@@ -17,7 +17,7 @@
 
       ii. Using MacPorts: sudo port install graphviz
 
-   c)
+   c) For Linux (Ubuntu/Debian):
 
       i. Using Apt: sudo apt-get update
                    sudo apt-get install graphviz
